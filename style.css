@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    height: auto;
+    width: 100vw;
+}
+  
+.background {
+    height: 100vh;
+    width: 100vw;
+    background-color: skyblue;
+    display:flex;
+    background-size: 100%;
+}
+  
+.bird {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top: 40vh;
+    left: 30vw;
+    z-index: 100;
+}
+  
+.pipe_sprite {
+    position: fixed;
+    top: 40vh;
+    left: 100vw;
+    height: 70vh;
+    width: 6vw;
+    background-image: linear-gradient(to right,green,rgb(90, 165, 90),green);
+}
+  
+.message {
+    position: fixed;
+    z-index: 10;
+    height: 10vh;
+    font-size: 10vh;
+    font-weight: 100;
+    color: rgb(255, 0, 0);
+    top: 12vh;
+    left: 20vw;
+    text-align: center;
+}
+#btn {
+  background-color:transparent;
+  border: 5px solid red;
+  padding:10px 20px 10px 20px;
+  z-index:10;
+  font-size:45px;
+  font-weight: 900;
+  color:red;
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  display:none;
+  transition: 0.3s linear;
+  outline:none;
+}
+#btn:hover {
+  background-color:red;
+  color:white;
+  cursor:pointer;
+}
+#hidden123 {
+  background-color:black;
+  color:white;
+  position: fixed;
+  bottom:0px;
+  left:30%;
+  margin:20px;
+  padding:20px;
+  z-index:10;
+  text-align:center;
+  display:none;
+}
+.score {
+    position: fixed;
+    z-index: 10;
+    height: 10vh;
+    font-size: 10vh;
+    font-weight: 100;
+    color: goldenrod;
+    top: 0;
+    left: 0;
+}
+  
+.score_val {
+    color: gold;
+}
+@media screen and (max-width: 1200px){
+  .bird {
+    height: 25px;
+    width: 25px;
+  }
+}

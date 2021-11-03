@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Flappy Pigeon</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel='icon' href='img/bird2.png' />
+  </head>
+  <body>
+    <div class="background" id='back'></div>
+    <img  id='bird' class="bird" src="img/bird3.gif" alt="plane-img">
+    <div class="message">
+        Press Enter or Click To Start Game
+    </div>
+    <div class="score">
+        <span class="score_title"></span>
+        <span class="score_val"></span>
+    </div>
+    <button id='btn' onclick='location.reload();'>Play Again?</button>
+    <div id='hidden123'><b>Congrats!</b> you got past score 100 score 150 is the highest score you can get.Your prize is this: <a href='https://www.wevideo.com/view/2257028264' target="_blank">Watch me</a> watch this video. <a href='prize.txt'>Click me after the video make sure not to close this tab</a></div>
+    <audio id='music' loop style="display:none;">
+        <source src='m/Gentleman.mp3' type='audio/mpeg'>
+    </audio>
+    <audio id='music2' loop style="display:none;">
+        <source src='m/Jifuragi.mp3' type='audio/mpeg'>
+    </audio>
+    <audio id='ding' style="display:none;">
+        <source src='m/ding.mp3' type='audio/mpeg'>
+    </audio>
+    <audio id='ding' style="display:none;">
+        <source src='m/ding.mp3' type='audio/mpeg'>
+    </audio>
+    <script src="script.js"></script>
+  </body>
+</html>
