@@ -154,6 +154,10 @@ function play() {
               back.style.backgroundImage = "url('new/galaxy.jpg')";
               document.getElementById('ding').play();
               move_speed = 12;
+              var all = document.getElementsByClassName('pipe_sprite');
+              for (var i = 0; i < all.length; i++) {
+                all[i].style.backgroundImage = 'linear-gradient(to right,rgb(166, 166, 166),white,rgb(166, 166, 166))';
+              }
             }
             else if (bob == 80) {
               var back = document.getElementById('back');
