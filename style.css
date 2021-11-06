@@ -118,4 +118,7 @@ body {
     height: 25px;
     width: 25px;
   }
+  .message {
+     font-size: 5vh;
+   }
 }
