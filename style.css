@@ -8,7 +8,17 @@ body {
     height: auto;
     width: 100vw;
 }
-  
+.scoreboard {
+  position:fixed;
+  bottom:0;
+  left:0;
+  background-color:rgba(0, 0, 0, 0.418);
+  padding:10px;
+  color: rgb(255, 255, 255);
+  z-index: 10;
+  font-size: 2vh;
+  display:block;
+} 
 .background {
     height: 100vh;
     width: 100vw;
@@ -16,7 +26,6 @@ body {
     display:flex;
     background-size: 100%;
 }
-  
 .bird {
     height: 50px;
     width: 50px;
@@ -41,19 +50,19 @@ body {
     height: 10vh;
     font-size: 10vh;
     font-weight: 100;
-    color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
     top: 12vh;
     left: 20vw;
     text-align: center;
 }
 #btn {
   background-color:transparent;
-  border: 5px solid red;
+  border: 5px solid rgb(0, 0, 0);
   padding:10px 20px 10px 20px;
   z-index:10;
   font-size:45px;
   font-weight: 900;
-  color:red;
+  color:rgb(0, 0, 0);
   position: fixed;
   top: 30%;
   left: 30%;
@@ -62,7 +71,7 @@ body {
   outline:none;
 }
 #btn:hover {
-  background-color:red;
+  background-color:rgba(255, 0, 0, 0.233);
   color:white;
   cursor:pointer;
 }
@@ -81,17 +90,29 @@ body {
 .score {
     position: fixed;
     z-index: 10;
-    height: 10vh;
-    font-size: 10vh;
+    font-size: 5vh;
     font-weight: 100;
     color: goldenrod;
     top: 0;
     left: 0;
+    background-color:rgba(0, 0, 0, 0.418);
+    padding:10px;
 }
-  
+.lscore {
+    position: fixed;
+    z-index: 10;
+    font-size: 2vh;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    top: 0;
+    right: 0;
+    background-color:rgba(0, 0, 0, 0.418);
+    padding:10px;
+}
 .score_val {
     color: gold;
 }
+
 @media screen and (max-width: 1200px){
   .bird {
     height: 25px;
