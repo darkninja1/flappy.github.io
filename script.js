@@ -120,7 +120,7 @@ function play() {
             }
             else if (bob == 20) {
               var back = document.getElementById('back');
-              back.style.backgroundImage = "url('img2/forest.jpeg')";
+              back.style.backgroundImage = "url('https://www.scienceintheclassroom.org/sites/default/files/styles/open_graph/public/magazine-images/06_Seeing-the-forest-for-the-trees.jpg?itok=ArG80Ken')";
               document.getElementById('ding').play();
               move_speed = 6;
             }
